@@ -34,7 +34,7 @@ async def handle_arch_message(msg: TritMessage):
     reply_text = f"[Arch Relay] Received in balanced ternary: {plaintext[:400]}..."
     
     # Encode reply back to trit stream using your exact encoder
-    trit_reply = encode_text(reply_text)
+    trit_reply = encode_text(reply_text, tier1, tier2)
     
     return {
         "payload": trit_reply,
