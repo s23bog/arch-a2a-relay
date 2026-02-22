@@ -8,10 +8,10 @@ import sys
 # Load your exact maps (the ones you just uploaded)
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(script_dir, 'map.json'), 'r', encoding='utf-8') as f:
+with open(os.path.join(script_dir, 'arch-identity/map.json'), 'r', encoding='utf-8') as f:
     tier1 = json.load(f)['mapping']
 
-with open(os.path.join(script_dir, 'tier2_map.json'), 'r', encoding='utf-8') as f:
+with open(os.path.join(script_dir, 'arch-identity/tier2_map.json'), 'r', encoding='utf-8') as f:
     tier2 = json.load(f)['mapping']
 
 # Import your exact encode/decode functions (the files you uploaded)
